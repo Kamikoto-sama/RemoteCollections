@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-namespace Redis.Collections.Generic.Serializing;
+namespace RemoteCollections.Redis.Serializing;
 
 public interface IRedisSerializer
 {

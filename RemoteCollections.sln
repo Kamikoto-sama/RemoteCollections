@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Collections.Generic", "Redis.Collections.Generic\Redis.Collections.Generic.csproj", "{A8FAABC2-58B6-4AD9-AA04-E811038D5A35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteCollections.Redis", "RemoteCollections.Redis\RemoteCollections.Redis.csproj", "{A8FAABC2-58B6-4AD9-AA04-E811038D5A35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

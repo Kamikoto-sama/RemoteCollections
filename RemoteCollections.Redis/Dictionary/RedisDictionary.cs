@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Diagnostics.CodeAnalysis;
-using Redis.Collections.Generic.Serializing;
+using RemoteCollections.Redis.Serializing;
 using StackExchange.Redis;
 
-namespace Redis.Collections.Generic;
+namespace RemoteCollections.Redis.Dictionary;
 
 public class RedisDictionary<TKey, TValue> : IDictionary<TKey, TValue> where TKey : notnull
 {
     private readonly IDatabase database;
-    private readonly string redisKey;
+    private readonly RedisKey redisKey;
     private readonly IRedisSerializer keySerializer;
     private readonly IRedisSerializer valueSerializer;
 
@@ -37,7 +37,7 @@ public class RedisDictionary<TKey, TValue> : IDictionary<TKey, TValue> where TKe
         this.database = database;
         keySerializer = options.KeySerializer;
         valueSerializer = options.ValueSerializer;
-        redisKey = RedisKeyBuilder.GetRedisKey(this, name);
+        redisKey = RedisKeyBuilder.GetRedisKey(nameof(IDictionary<TKey, TValue>), name);
     }
 
     public void Add(TKey key, TValue value)

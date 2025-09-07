@@ -1,7 +1,6 @@
-﻿using Redis.Collections.Generic.Serializing;
-using StackExchange.Redis;
+﻿using RemoteCollections.Redis.Serializing;
 
-namespace Redis.Collections.Generic;
+namespace RemoteCollections.Redis;
 
 public class RedisCollectionOptions
 {

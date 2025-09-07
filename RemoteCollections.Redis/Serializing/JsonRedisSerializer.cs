@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using StackExchange.Redis;
 
-namespace Redis.Collections.Generic.Serializing;
+namespace RemoteCollections.Redis.Serializing;
 
 public class JsonRedisSerializer : IRedisSerializer
 {
